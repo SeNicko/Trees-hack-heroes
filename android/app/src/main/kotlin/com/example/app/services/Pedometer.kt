@@ -79,16 +79,22 @@ class Pedometer: Service(), SensorEventListener {
             savingUtility.saveTodayData(TodayData(0, 0, Date()))
             savingUtility.saveSummaryData(SummaryData(fileTodaySteps + fileTotalHistoricSteps, fileTodayTrees + fileTotalHistoricTrees, fileDailyGoal))
 
+            fileTodayStepsFirstRead = -1
+
             return fetchFileData()
         }
 
         return true
     }
 
+    private var pedometerDateOfLastReading = Date(0)
+
     override fun onCreate() {
         savingUtility = Save(baseContext)
 
         if(fetchFileData()) {
+            pedometerDateOfLastReading = fileTodayDate
+
             val contentIntent = PendingIntent.getActivity(this, 0,
                     Intent(this, MainActivity::class.java), PendingIntent.FLAG_UPDATE_CURRENT)
 
@@ -125,7 +131,6 @@ class Pedometer: Service(), SensorEventListener {
     }
 
     private var pedometerStepCountSinceBoot = 0
-    private var pedometerDateOfLastReading = Date()
     private var pedometerFirstReading = -1
 
     fun isPedometerError(): Boolean {
@@ -157,7 +162,7 @@ class Pedometer: Service(), SensorEventListener {
         return fileDailyGoal
     }
 
-    fun save(todaySteps: Int = getTodaySteps(), todayTrees: Int = fileTodayTrees.div(getDailyGoal()), todayDate: Date = pedometerDateOfLastReading, totalHistoricSteps: Int = fileTotalHistoricSteps, totalHistoricTrees: Int = fileTotalHistoricTrees, dailyGoal: Int = getDailyGoal(), fire: Boolean = false): Boolean {
+    private fun save(todaySteps: Int = getTodaySteps(), todayTrees: Int = fileTodayTrees.div(getDailyGoal()), todayDate: Date = pedometerDateOfLastReading, totalHistoricSteps: Int = fileTotalHistoricSteps, totalHistoricTrees: Int = fileTotalHistoricTrees, dailyGoal: Int = getDailyGoal(), fire: Boolean = false): Boolean {
         applyDayChangeIfNeeded()
 
         savingUtility.saveTodayData(TodayData(todaySteps, todayTrees, todayDate))
@@ -176,7 +181,7 @@ class Pedometer: Service(), SensorEventListener {
         val newDate = Date()
 
         pedometerDateOfLastReading = newDate
-        save(0, 0, newDate, getTodaySteps() + fileTotalHistoricSteps, getTodayTrees() + fileTotalHistoricTrees)
+        save(0, 0, newDate, getTodaySteps() + fileTotalHistoricSteps, getTodayTrees() + fileTotalHistoricTrees, fire = true)
 
         pedometerFirstReading = pedometerStepCountSinceBoot
     }

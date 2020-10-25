@@ -4,11 +4,14 @@ import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';
 import "package:app/views/app_view.dart";
 
+import 'utils/step_count_provider.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Permission.activityRecognition.request().then((_) async {
     runApp(App());
+    stepCountProvider.startService();
   });
 }
 

@@ -69,7 +69,6 @@ class MainActivity: FlutterActivity() {
                         "getTotalSteps" -> result.success(pedometerService.getTotalSteps())
                         "getTotalTrees" -> result.success(pedometerService.getTotalTrees())
                         "getDailyGoal" -> result.success(pedometerService.getDailyGoal())
-                        "save" -> result.success(pedometerService.save())
                         else -> result.notImplemented()
                     }
                 } else {

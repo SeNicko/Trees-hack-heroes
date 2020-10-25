@@ -34,14 +34,15 @@ class StepCountProvider {
     new Timer.periodic(const Duration(milliseconds: 100), (_) {
       // TODO: Jak będzie czas to zmienić to na eventchannels czy coś takiego
       _isPedometerError();
-      _changeDateIfNeeded();
-      _getTodaySteps();
+      _changeDateIfNeeded().then((value) {
+        _getTodaySteps();
 
-      _getTodayTrees();
-      _getTotalTrees();
+        _getTodayTrees();
+        _getTotalTrees();
 
-      _getTotalSteps();
-      _getDailyGoal();
+        _getTotalSteps();
+        _getDailyGoal();
+      });
     });
   }
 
@@ -90,12 +91,6 @@ class StepCountProvider {
   Future<void> _getDailyGoal() async {
     try {
       _dailyGoal = await platform.invokeMethod("getDailyGoal");
-    } on PlatformException catch (_) {}
-  }
-
-  Future<void> save() async {
-    try {
-      await platform.invokeMethod("save");
     } on PlatformException catch (_) {}
   }
 
