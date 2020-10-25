@@ -2,25 +2,25 @@
 
 ## Na jakie potrzeby/problem odpowiada nasze rozwiązanie?
 
-Trees to aplikacja, której zadaniem jest zmotywowanie ludzi do chodzenia oraz uświadomienie im, że mają przez to wpływ na środowisko. W Aplikacji każdy z nas posiada swoje wirtualne drzewko, które rośnie kiedy chodzimy. Dodatkowo użytkownicy są w stanie zobaczyć o ile kg zredukowali emisję CO2 chodząc zamiast poruszając się samochodem.
+Trees to aplikacja, której zadaniem jest zmotywowanie ludzi do chodzenia oraz uświadomienie im, że mają przez to wpływ na środowisko. W aplikacji każdy z nas posiada swoje wirtualne drzewko, które rośnie kiedy chodzimy. Dodatkowo użytkownicy są w stanie zobaczyć o ile kg zredukowali emisję CO2 chodząc zamiast poruszając się samochodem.
 
 ## W jakich językach programowania, jakich technologiach powstała aplikacja/narzędzie
 
 Aplikacja powstała w następujących technologiach:
 
-- Flutter (Narzędzie od Google pozwalające na tworzenie aplikacji na telefony przy użyciu języka programowania Dart), Został użyty do zaprogramowania UI oraz UX naszej aplikacji,
+- Flutter (narzędzie od Google pozwalające na tworzenie aplikacji na telefony przy użyciu języka programowania Dart) został użyty do zaprogramowania UI naszej aplikacji,
 
-- Kotlin (Język programowania używany do programowania aplikacji), Kotlin pomógł nam w zaprogramowaniu systemowych czynności takich jak współpraca z plikami na telefonie, czy odczytywanie pedometru.
+- Kotlin (język programowania używany do programowania aplikacji) pomógł nam w zaprogramowaniu systemowych czynności takich jak współpraca z plikami na telefonie, czy odczytywanie pedometru.
 
 ## Opis działania naszej aplikacji/narzędzia
 
-Po włączeniu naszej aplikacji zostajemy przekierowani do głównej strony. Znajduje się na niej cel dzisiejszych kroków (10 000), ilość naszych kroków, oraz mała roślinka z procentem wyrośnięcia. Gdy zaczynamy chodzić drzewko zaczyna rosnąć, a procent jego wyrośnięcia idzie w górę. Wyrastanie drzewka podzielone jest na 6 etapów. Każdy etap zmienia wygląd naszego drzewa. Po zdobyciu celu kroków do naszego ogrodu dodaje się jedno drzewo! W ogrodzie możemy zobaczyć wszystkie drzewa, które wyrosły! Zakładka statystyki zawiera informację o łącznej ilości kroków od momentu zainstalowania aplikacji oraz ilość CO2 podaną w kilogramach, która dostała by się do atmosfery gdybyśmy jechali przebyty dystans autem.
+Po włączeniu naszej aplikacji zostajemy przekierowani do głównej strony. Znajduje się na niej cel dzisiejszych kroków (10 000), ilość naszych kroków, oraz mała roślinka z procentem wyrośnięcia. Gdy zaczynamy chodzić drzewko zaczyna rosnąć, a procent jego wyrośnięcia idzie w górę. Wyrastanie drzewka podzielone jest na 6 etapów. Każdy etap zmienia wygląd naszego drzewa. Po zdobyciu celu kroków do naszego ogrodu dodaje się jedno drzewo! W ogrodzie możemy zobaczyć wszystkie drzewa, które wyrosły. Zakładka statystyki zawiera informację o łącznej ilości kroków od momentu zainstalowania aplikacji oraz ilość CO2 podaną w kilogramach, która została wyprodukowana gdybyśmy przebyli tę drogę samochodem osobowym.
 
 ## Jak widzimy dalszy rozwój naszego rozwiązania?
 
 Chcielibyśmy połączyć naszą aplikację z internetem. Każdy użytkownik byłby zapisany w bazie, przez co można by stworzyć ranking najlepszych graczy, który mógł by być jeszcze większą motywacją do chodzenia. Ranking byłby uzależniony od ilości przebytych kroków. Użytkownicy prawdopodobnie chodziliby więcej aby być pierwsi.
 
-Najważniejsza rzecz, to umożliwienie sadzenia prawdziwych drzew. Aplikacja mogła by być "połączona" z Fundacją która sadzi drzewa. Użytkownik po przejściu określonej ilości kroków zasadzał by prawdziwe drzewo.
+Najważniejsza rzecz, to umożliwienie sadzenia prawdziwych drzew. Aplikacja mogła by być "połączona" z fundacją która się tym zajmuje. Użytkownik po przejściu określonej ilości kroków zasadzał by prawdziwe drzewo.
 
 ## Jakie widzimy zagrożenia/ryzyka dla naszego rozwiązania?
 
@@ -32,4 +32,4 @@ Najważniejsza rzecz, to umożliwienie sadzenia prawdziwych drzew. Aplikacja mog
 
 ## Dlaczego akurat my powinniśmy wygrać?
 
-Ludzie coraz więcej czasu spędzają w domach przed ekranami telewizorów, komputerów i smartfonów, dlatego nasza aplikacja zachęca do czynnej aktywności fizycznej - spacerowania i chodzenia. Jeśli społeczeństwo częściej zaczeło by wychodzić na świeże powietrze co samo w sobie dobrze działa na ludzki organizm to przez chodzenie zmniejszyliby problem z otyłością. Aby zachęcić ludzi do codziennego spacerowania daliśmy im cel - wyrościęcie wirtualnego drzewka, ponieważ jak wiadomo dla każdego z nas jakakolwiek czynność staje się bardziej atrakcyjna jeśli dązymy do pewnego celu a szczególnie gdy tym celem jest coś do czego własnoręcznie się przyczyniliśmy i coś co możemy zobaczyć.
+Ludzie coraz więcej czasu spędzają w domach przed ekranami telewizorów, komputerów i smartfonów, dlatego nasza aplikacja zachęca do czynnej aktywności fizycznej - spacerowania i chodzenia. Jeśli społeczeństwo częściej zaczeło by wychodzić na świeże powietrze co samo w sobie dobrze działa na ludzki organizm to przez chodzenie zmniejszyliby problem z otyłością. Aby zachęcić ludzi do codziennego spacerowania daliśmy im cel - wyrościęcie wirtualnego drzewka, ponieważ jak wiadomo dla każdego z nas jakakolwiek czynność staje się bardziej atrakcyjna jeśli dążymy do pewnego celu a szczególnie gdy tym celem jest coś do czego własnoręcznie się przyczyniliśmy i coś co możemy zobaczyć.
