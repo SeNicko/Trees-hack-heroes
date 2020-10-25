@@ -33,3 +33,7 @@ Najważniejsza rzecz, to umożliwienie sadzenia prawdziwych drzew. Aplikacja mog
 ## Dlaczego akurat my powinniśmy wygrać?
 
 Ludzie coraz więcej czasu spędzają w domach przed ekranami telewizorów, komputerów i smartfonów, dlatego nasza aplikacja zachęca do czynnej aktywności fizycznej - spacerowania i chodzenia. Jeśli społeczeństwo częściej zaczeło by wychodzić na świeże powietrze co samo w sobie dobrze działa na ludzki organizm to przez chodzenie zmniejszyliby problem z otyłością. Aby zachęcić ludzi do codziennego spacerowania daliśmy im cel - wyrościęcie wirtualnego drzewka, ponieważ jak wiadomo dla każdego z nas jakakolwiek czynność staje się bardziej atrakcyjna jeśli dążymy do pewnego celu a szczególnie gdy tym celem jest coś do czego własnoręcznie się przyczyniliśmy i coś co możemy zobaczyć.
+
+## Link do pobrania aplikacji
+
+https://drive.google.com/drive/folders/1QseFQTsFElcN_QWaO03Z3iQIYpYGwEFy?usp=sharing
